@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#container{
+    background-image: url("Images-WW2-Quiz/IwoJima.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1009px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    font-size: 4vw;
+    color: white;
+    margin: 30px;
+    text-transform: uppercase;
+}
+#tracker{
+    margin-bottom: 30px;
+    font-size: 2.5vw;
+}
+#quiz-container{
+    border-radius: 20px;
+    width: 80%;
+}
+.upperLine{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgba(0, 26, 5, 0.7);
+    padding: 10px;
+    border-bottom: 10px #152200, solid;
+    color: white;
+}
+#question{
+    font-size: 3vw;
+    align-self: center;
+}
+#timer{
+    font-size: 70px;
+}
+#question, #timer{
+    padding: 20px 10px;
+}
+.options-field{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    color: white;
+}
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001a05;
+    height: 180px;
+    font-size: 3.6vh;
+}
+#next-btn{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 26, 5, 0.7);
+    color: white;
+}
+.option, #next-btn{
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+}
+.option:hover{
+    cursor: pointer;
+    background-color:rgb(21, 58, 0);
+}
+#next-btn:hover{
+    cursor: pointer;
+
+}
+
+#endWindow{
+    display: none;
+}
+#button-container{
+    display: flex;
+    justify-content: center;
+}
+#results-question{
+    font-size: 3vh;
+    color: black;
+    margin: 20px;
+}
+.button{
+    outline: 0;
+    border: 0;
+    padding: 12px 18px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 3vw;
+}
+.black{
+    background-color: black;
+}
+#yes{
+    background-color: rgb(34,147,59);
+}
+#no{
+    background-color: rgb(208,58,59);
+}
+
+
+.results{
+    font-size: 50px;
+    color: black;
+    margin: 15px;
+}
+.counter-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: black;
+}
+.right-wrong{
+    font-size: 25px;
+    padding: 8px 12px;
+}
+
+.red{
+    background-color: rgb(208,58,59);
+    color: white;
+}
+.green{
+    background-color: rgb(34,147,59);
+    color: black;
+}
+.itemPart{
+    display: flex;
+    justify-content: center;
+    flex-basis: 33.33%;
+}
+.itemQuestion{
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 33.33%;
+}
+.itemYourAnswer{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 33.33%;
+}
+.item{
+    width: 90%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 13px;
+}
+
+@media(max-width: 850px){
+    .options-field{
+        grid-template-columns: 100%;
+    }
+    #button-container{
+        flex-direction: column;
+        align-content: center;
+    }
+}
